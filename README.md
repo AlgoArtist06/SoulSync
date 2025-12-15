@@ -2,8 +2,6 @@
 
 SoulSync is a modern matrimony and dating application designed to help users find their perfect match. It features a robust backend built with Java Spring Boot and a dynamic frontend built with React.
 
-![SoulSync Banner](https://via.placeholder.com/1200x400?text=SoulSync+Application) 
-*(Replace with actual screenshot if available)*
 
 ## 🚀 Features
 
@@ -27,7 +25,31 @@ SoulSync is a modern matrimony and dating application designed to help users fin
 -   **Build Tool**: Vite
 -   **Styling**: CSS / Modern UI Libraries
 
-## 📋 Prerequisites
+## � Docker Deployment
+
+Experience the full application stack with a single command using Docker.
+
+### Capabilities
+-   **Full Stack Containerization**: Frontend (Nginx), Backend (Spring Boot), and Database (PostgreSQL) run in isolated containers.
+-   **Hot Reloading**: (Optional configuration) for easier development.
+-   **Data Persistence**: Docker volumes ensure your database data survives container restarts.
+-   **Production-Ready Frontend**: The frontend is built and served via high-performance Nginx.
+
+### How to Run
+
+1.  **Prerequisites**: Ensure you have Docker Desktop installed and running.
+2.  **Run Command**:
+    ```bash
+    docker-compose up --build
+    ```
+3.  **Access Services**:
+    -   **Frontend**: [http://localhost:5173](http://localhost:5173)
+    -   **Backend API**: [http://localhost:8080](http://localhost:8080)
+    -   **Database**: `localhost:5432`
+
+**Note**: The Docker setup automatically provisions a PostgreSQL database (`soulsync-db-new`) with the required schema and credentials.
+
+## �📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
 -   **Java JDK 21**
