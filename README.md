@@ -31,6 +31,11 @@ Experience the full application stack with a single command using Docker.
 
 ### Capabilities
 -   **Full Stack Containerization**: Frontend (Nginx), Backend (Spring Boot), and Database (PostgreSQL) run in isolated containers.
+-   **Optimized Images**: Uses lightweight Alpine-based images for minimal footprint:
+    -   `postgres:15-alpine` (Database)
+    -   `eclipse-temurin:21-jdk` (Backend)
+    -   `node:18-alpine` (Frontend Build)
+    -   `nginx:alpine` (Frontend Serve)
 -   **Hot Reloading**: (Optional configuration) for easier development.
 -   **Data Persistence**: Docker volumes ensure your database data survives container restarts.
 -   **Production-Ready Frontend**: The frontend is built and served via high-performance Nginx.
